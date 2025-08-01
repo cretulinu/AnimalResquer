@@ -1,4 +1,4 @@
- public class Animal{
+ public abstract class Animal{
         private String name;
         private int age;
         private int healthLevel;
@@ -15,13 +15,9 @@
             System.out.println(name + " is sleeping");
         }
 
-        public void makeSound(){
-            System.out.println(name + " animal sound");
-        }
+        public abstract void makeSound();
 
-        public void play(){
-            System.out.println("the animal is playing");
-        }
+        public abstract void play();
 
         public String getName() {
             return name;
