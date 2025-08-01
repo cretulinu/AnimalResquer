@@ -3,6 +3,7 @@ import java.time.LocalDate;
 public class App{
     public static void main(String[] args){
         Dog dog = new Dog();
+
         dog.setName ("Rex");
         dog.setAge(3); 
         dog.setHealthLevel(9);
@@ -12,8 +13,22 @@ public class App{
         dog.setFavoriteActivity("Playing fetch");
 
         dog.eat();
-        dog.bark();
+        dog.makeSound();
         dog.sleep();
+        dog.play();
+
+        Cat cat = new Cat();
+
+        cat.setName ("Mina");
+        cat.setAge(5); 
+        cat.setHealthLevel(8);
+        cat.setHungerLevel(7);
+        cat.setMoodLevel(4);
+        cat.setFavoriteFood("Beef tartar");
+        cat.setFavoriteActivity("Sleeping");
+        
+        cat.makeSound();
+        cat.play();
 
         Adopter adopter = new Adopter();
         adopter.setName("Anna");

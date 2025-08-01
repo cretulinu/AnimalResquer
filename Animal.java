@@ -15,6 +15,14 @@
             System.out.println(name + " is sleeping");
         }
 
+        public void makeSound(){
+            System.out.println(name + " animal sound");
+        }
+
+        public void play(){
+            System.out.println("the animal is playing");
+        }
+
         public String getName() {
             return name;
         }
