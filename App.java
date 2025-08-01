@@ -2,37 +2,41 @@ import java.time.LocalDate;
 
 public class App{
     public static void main(String[] args){
-        Animal dog = new Animal();
+        Dog dog = new Dog();
         dog.setName ("Rex");
         dog.setAge(3); 
-        dog.sethelthLevel(9);
-        dog.sethungerLevel(4);
-        dog.setmoodLevel(8);
-        dog.setfavoriteFood("Beef Kibble");
-        dog.setfavoriteActivity("Playing fetch");
+        dog.setHealthLevel(9);
+        dog.setHungerLevel(4);
+        dog.setMoodLevel(8);
+        dog.setFavoriteFood("Beef Kibble");
+        dog.setFavoriteActivity("Playing fetch");
+
+        dog.eat();
+        dog.bark();
+        dog.sleep();
 
         Adopter adopter = new Adopter();
-        adopter.setname("Anna");
-        adopter.setavailableMoney(500.0);
+        adopter.setName("Anna");
+        adopter.setAvailableMoney(500.0);
 
-        Food food = new Food();
-        food.setname("Beef Kibble");
-        food.setprice(30.0);
-        food.setquantity(10);
-        food.setexpirationDate(2025,12,31);
-        food.setisAvailableInStock(true);
+        AnimalFood food = new AnimalFood();
+        food.setName("Beef Kibble");
+        food.setPrice(30.0);
+        food.setQuantity(10);
+        food.setExpirationDate(LocalDate.of(2025,12,31));
+        food.setIsAvailableInStock(true);
 
         RecreationalActivity activity = new RecreationalActivity();
-        activity.setname("playing fetch");
+        activity.setName("playing fetch");
 
         Veterinarian vet = new Veterinarian();
-        vet.setname("Dr. Smith");
-        vet.setspecialization("Small animals");
+        vet.setName("Dr. Smith");
+        vet.setSpecialization("Small animals");
 
         Game game = new Game();
-        game.setadopter(adopter);
-        game.setdog(dog);
-        game.setvet(vet);
+        game.setAdopter(adopter);
+        game.setDog(dog);
+        game.setVet(vet);
     }
    
 }

@@ -1,5 +1,7 @@
 public class Game{
-    Adopter adopter;
+    private Adopter adopter;
+    private Animal dog;
+    private Veterinarian vet;
     public Adopter getAdopter() {
         return adopter;
     }
@@ -18,6 +20,4 @@ public class Game{
     public void setVet(Veterinarian vet) {
         this.vet = vet;
     }
-    Animal dog;
-    Veterinarian vet;
 }

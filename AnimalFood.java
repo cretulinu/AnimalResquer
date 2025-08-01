@@ -1,15 +1,21 @@
+import java.time.LocalDate;
+
 public class AnimalFood{
-    String nume;
-    public String getNume() {
-        return nume;
+    private String name;
+    private double price;
+    private int quantity;
+    private LocalDate expirationDate;
+    private boolean isAvailableInStock;
+    public String getName() {
+        return name;
     }
-    public void setNume(String nume) {
-        this.nume = nume;
+    public void setName(String name) {
+        this.name = name;
     }
     public int getPrice() {
         return price;
     }
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
     public int getQuantity() {
@@ -24,14 +30,10 @@ public class AnimalFood{
     public void setExpirationDate(LocalDate expirationDate) {
         this.expirationDate = expirationDate;
     }
-    public boolean isAvailableInStock() {
+    public boolean getIsAvailableInStock() {
         return isAvailableInStock;
     }
-    public void setAvailableInStock(boolean isAvailableInStock) {
+    public void setIsAvailableInStock(boolean isAvailableInStock) {
         this.isAvailableInStock = isAvailableInStock;
     }
-    int price;
-    int quantity;
-    LocalDate expirationDate;
-    boolean isAvailableInStock;
 }

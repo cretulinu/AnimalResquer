@@ -1,5 +1,5 @@
-public class RecreationalActivity{
-    private String name;
+public class Person{
+    String name;
 
     public String getName() {
         return name;
@@ -8,4 +8,5 @@ public class RecreationalActivity{
     public void setName(String name) {
         this.name = name;
     }
+
 }
